@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,12 +8,11 @@ public class Main {
         System.out.println("Enter Size of an Array: ");
         int size = sc.nextInt();
 
-        int [] arr = new int[size];
+        int[] arr = new int[size];
 
         for (int i = 0; i < arr.length; i++) {
 
             arr[i] = sc.nextInt();
-
 
         }
         for (int i = 0; i < arr.length; i++) {
@@ -27,18 +27,16 @@ public class Main {
 
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] > max){
+            if (arr[i] > max) {
 
                 max = arr[i];
                 maxIndex = i;
 
-        }
-
+            }
 
         }
 
         System.out.println(" Maximum Element is :" + max + " At Index: " + maxIndex);
-
 
         // Min Element
         int min = arr[0];
@@ -46,24 +44,15 @@ public class Main {
 
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] < min){
+            if (arr[i] < min) {
 
                 min = arr[i];
                 minIndex = i;
             }
 
-
-
         }
 
         System.out.println("Minimum Element is:" + min + " At index : " + minIndex);
-
-
-
-
-
-
-
 
     }
 }

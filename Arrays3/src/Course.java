@@ -1,12 +1,8 @@
 
-
 public class Course {
     private int credits;
     private String cTitle;
     private String cCode;
-
-
-
 
     public int getCredits() {
         return credits;

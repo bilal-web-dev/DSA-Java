@@ -155,10 +155,6 @@ public class CircularLinkedList {
         return currentNode;
     }
 
-
-
-
-
     public static void main(String[] args) {
         CircularLinkedList ll = new CircularLinkedList();
 
@@ -184,11 +180,6 @@ public class CircularLinkedList {
         ll.deleteAtIndex(1);
         ll.printList();
 
-
-
     }
-
-
-
 
 }

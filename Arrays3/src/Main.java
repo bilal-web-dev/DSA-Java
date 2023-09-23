@@ -5,14 +5,13 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Scanner inputString = new Scanner(System.in);
 
-
         System.out.println("Enter Size of Array;");
         int size = input.nextInt();
         Course[] array = new Course[size];
 
         for (int i = 0; i < array.length; i++) {
             array[i] = new Course();
-            System.out.println("Enter Course Code:" );
+            System.out.println("Enter Course Code:");
             array[i].setcCode(inputString.nextLine());
             System.out.println("Enter Course Title: ");
             array[i].setcTitle(inputString.nextLine());
@@ -26,7 +25,6 @@ public class Main {
             System.out.println(array[i].getcCode());
             System.out.println(array[i].getCredits());
         }
-
 
     }
 }

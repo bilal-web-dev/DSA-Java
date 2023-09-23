@@ -1,7 +1,6 @@
 public class Student {
 
-
-    private  String id;
+    private String id;
     private String name;
     private double cgpa;
 
@@ -36,7 +35,5 @@ public class Student {
     public void setCgpa(double cgpa) {
         this.cgpa = cgpa;
     }
-
-
 
 }

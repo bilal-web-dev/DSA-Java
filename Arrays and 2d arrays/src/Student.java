@@ -2,8 +2,7 @@ public class Student {
     private int id;
     private String name;
 
-
-    public void setId(int id){
+    public void setId(int id) {
 
         this.id = id;
         System.out.println("in setter");

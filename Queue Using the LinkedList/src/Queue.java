@@ -9,15 +9,12 @@ public class Queue {
         }
     }
 
-
     static Node head = null;
     static Node tail = null;
-
 
     public static boolean isEmpty() {
         return head == null && tail == null;
     }
-
 
     public static void add(int data) {
         Node newNode = new Node(data);
@@ -29,21 +26,19 @@ public class Queue {
         }
     }
 
-
     public static int remove() {
         if (isEmpty()) {
             System.out.println("empty queue");
             return -1;
         }
         int front = head.data;
-        //single node
+        // single node
         if (head == tail) {
             tail = null;
         }
         head = head.next;
         return front;
     }
-
 
     public static int peek() {
         if (isEmpty()) {

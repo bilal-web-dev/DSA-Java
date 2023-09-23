@@ -1,8 +1,8 @@
 import java.util.*;
+
 public class Main {
 
-
-    public static void display(ArrayList<String> students){
+    public static void display(ArrayList<String> students) {
         System.out.println(students);
     }
 
@@ -57,10 +57,6 @@ public class Main {
         display(students);
         System.out.println();
 
-
-
-
     }
-
 
 }

@@ -1,6 +1,5 @@
 public class Main {
 
-
     public static void main(String args[]) {
         Queue q = new Queue(5);
         q.add(1);
@@ -13,14 +12,8 @@ public class Main {
         System.out.println(q.remove());
         q.add(7);
 
-
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             System.out.println(q.remove());
         }
     }
 }
-
-
-
-
-

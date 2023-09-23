@@ -1,21 +1,21 @@
-public class DLL{
+public class DLL {
 
     private Node head;
     private Node tail;
     private int size;
 
-private class Node {
-    private int data;
-    private Node prev;
-    private Node next;
+    private class Node {
+        private int data;
+        private Node prev;
+        private Node next;
 
-    public Node(int data) {
-        this.data = data;
-        this.prev = null;
-        this.next = null;
+        public Node(int data) {
+            this.data = data;
+            this.prev = null;
+            this.next = null;
+        }
+
     }
-
-}
 
     public DLL() {
         head = null;
@@ -143,8 +143,6 @@ private class Node {
     public static void main(String[] args) {
         DLL dll = new DLL();
 
-
-
         dll.insertAtStart(1);
         dll.insertAtStart(2);
         dll.insertAtStart(3);
@@ -161,21 +159,9 @@ private class Node {
         dll.deleteAtIndex(2);
         dll.printList();
 
-
         dll.insertAtEnd(10);
         dll.printList();
-
-
-
-
 
     }
 
 }
-
-
-
-
-
-
-

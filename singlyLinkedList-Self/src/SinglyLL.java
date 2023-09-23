@@ -3,22 +3,22 @@ public class SinglyLL {
     Node head;
     int size;
 
-    class Node{
+    class Node {
 
         String data;
         Node next;
 
-        public Node(String data){
+        public Node(String data) {
             this.data = data;
             this.next = null;
         }
     }
 
-    public SinglyLL(){
+    public SinglyLL() {
         size = 0;
     }
 
-    public void addAtStart(String data){
+    public void addAtStart(String data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
@@ -30,7 +30,7 @@ public class SinglyLL {
         size++;
     }
 
-    public void addAtEnd(String data){
+    public void addAtEnd(String data) {
         Node newNode = new Node(data);
 
         if (head == null) {
@@ -40,7 +40,7 @@ public class SinglyLL {
         }
 
         Node currNode = head;
-        while (currNode.next != null){
+        while (currNode.next != null) {
             currNode = currNode.next;
         }
 
@@ -48,13 +48,13 @@ public class SinglyLL {
         size++;
     }
 
-    public void traverse(){
+    public void traverse() {
         if (head == null) {
             System.out.println("The list is empty");
             return;
         }
         Node currNode = head;
-        while (currNode != null){
+        while (currNode != null) {
             System.out.print(currNode.data + " -> ");
             currNode = currNode.next;
         }
@@ -63,7 +63,7 @@ public class SinglyLL {
 
     }
 
-    public void deleteAtStart(){
+    public void deleteAtStart() {
         if (head == null) {
             System.out.println("The list is empty");
             return;
@@ -74,7 +74,7 @@ public class SinglyLL {
 
     }
 
-    public void deleteAtEnd(){
+    public void deleteAtEnd() {
         if (head == null) {
             System.out.println("The list is empty");
             return;
@@ -82,21 +82,20 @@ public class SinglyLL {
 
         Node last = head.next;
         Node secondLast = head;
-        while (last.next != null){
+        while (last.next != null) {
             secondLast = secondLast.next;
         }
         secondLast.next = null;
         size--;
 
-
     }
 
-    public int getSize(){
+    public int getSize() {
         System.out.println(size);
         return size;
     }
 
-    public void deleteAtIndex(int index){
+    public void deleteAtIndex(int index) {
         if (head == null || index >= size) {
             System.out.println("Invalid Index or The list is Empty");
             return;
@@ -110,7 +109,7 @@ public class SinglyLL {
 
         int i = 0;
         Node node = head;
-        while (i < index - 1){
+        while (i < index - 1) {
             node = node.next;
             i++;
         }
@@ -119,7 +118,7 @@ public class SinglyLL {
 
     }
 
-    public void insertAtIndex(int index, String data){
+    public void insertAtIndex(int index, String data) {
 
         if (index > size) {
             System.out.println("Invalid Index");
@@ -140,7 +139,7 @@ public class SinglyLL {
         Node newNode = new Node(data);
         int i = 0;
         Node node = head;
-        while (i < index - 1){
+        while (i < index - 1) {
             node = node.next;
             i++;
         }
@@ -149,21 +148,15 @@ public class SinglyLL {
         size++;
     }
 
-
-
-
     public static void main(String[] args) {
         SinglyLL ll = new SinglyLL();
         ll.addAtStart("12");
 
-
         ll.addAtStart("13");
-
 
         ll.addAtEnd("11");
         ll.addAtEnd("75");
         ll.addAtEnd("19");
-
 
         ll.insertAtIndex(3, "74");
 
@@ -175,27 +168,18 @@ public class SinglyLL {
         ll.getSize();
         ll.traverse();
 
-//        ll.insertAtIndex(9, "454");
-//        ll.traverse();
+        // ll.insertAtIndex(9, "454");
+        // ll.traverse();
 
+        // ll.deleteAtIndex(2);
+        // ll.traverse();
 
-
-//        ll.deleteAtIndex(2);
-//        ll.traverse();
-
-//        ll.deleteAtStart();
-//        ll.traverse();
-//
-//        ll.deleteAtEnd();
-//        ll.traverse();
-//        ll.getSize();
+        // ll.deleteAtStart();
+        // ll.traverse();
+        //
+        // ll.deleteAtEnd();
+        // ll.traverse();
+        // ll.getSize();
     }
-
-
-
-
-
-
-
 
 }
